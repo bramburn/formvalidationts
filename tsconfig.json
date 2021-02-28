@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "lib": [
+      "dom"
+    ],
+    "esModuleInterop": true,
+    "strict": false,
+    "declaration": true,
+    "outDir": "dist",
+    "types": [
+      "@types/node",
+      "@nuxt/types",
+
+    ]
+  },
+  "include": [
+    "./src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "strict",
+    "dist"
+  ]
+}

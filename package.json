@@ -1,0 +1,47 @@
+{
+  "name": "formvalidationts",
+  "version": "1.0.1",
+  "description": "Form validation using phone lib for nuxtjs",
+  "main": "./dist/source.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "buildw": "tsc -w",
+    "pub": "bump patch && tsc && npm publish",
+    "prerelease": "bump prerelease",
+    "minor": "bump minor",
+    "patch": "bump patch",
+    "clean": "rm -rf dist",
+    "dev": "nuxt example",
+    "lint": "eslint --ext .ts,.js,.vue .",
+    "lint-fix": "yarn lint --fix",
+    "release": "yarn test && standard-version && git push --follow-tags && npm publish",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "@nuxt/types": "^2.14.9",
+    "@nuxtjs/eslint-config": "latest",
+    "@nuxtjs/eslint-config-typescript": "^5.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.9.0",
+    "@typescript-eslint/parser": "^4.9.0",
+    "babel-eslint": "latest",
+    "eslint": "^7.14.0",
+    "jest": "latest",
+    "ts-watch": "^1.0.8",
+    "typescript": "^4.2.2",
+    "version-bump-prompt": "^6.1.0"
+  },
+  "keywords": [
+    "form",
+    "validation",
+    "nuxt"
+  ],
+  "author": "Bhavesh Ramburn",
+  "license": "MIT",
+  "dependencies": {
+    "libphonenumber-js": "^1.9.11",
+    "uuid": "^8.3.2"
+  }
+}
