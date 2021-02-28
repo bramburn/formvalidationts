@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc",
     "buildw": "tsc -w",
-    "pub": "bump patch && tsc && npm publish",
+    "pub": "npm version patch && tsc && npm publish",
     "prerelease": "bump prerelease",
     "minor": "bump minor",
     "patch": "bump patch",
