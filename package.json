@@ -1,6 +1,6 @@
 {
   "name": "formvalidationts",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Form validation using phone lib for nuxtjs",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
