@@ -8,10 +8,10 @@ export declare class ValidateForm {
         status: boolean;
     };
     /**
-     *
-     * @param form HTMLInputElement // this is the form itself that you can send over to check
-     * Make sure you have use the data- attributes accordingly
-     */
+   *
+   * @param form HTMLInputElement // this is the form itself that you can send over to check
+   * Make sure you have use the data- attributes accordingly
+   */
     parse(form: HTMLInputElement): object;
     protected deleteCurrentFeedback(form: HTMLInputElement): void;
     addMessage(form: HTMLInputElement, messageValue?: string, valid?: boolean): void;

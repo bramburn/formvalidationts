@@ -33,10 +33,10 @@ export class ValidateForm {
         }
     }
     /**
-     *
-     * @param form HTMLInputElement // this is the form itself that you can send over to check
-     * Make sure you have use the data- attributes accordingly
-     */
+   *
+   * @param form HTMLInputElement // this is the form itself that you can send over to check
+   * Make sure you have use the data- attributes accordingly
+   */
     parse(form) {
         if (form === null) {
             return { status: false, message: 'Error no Form' };
@@ -63,7 +63,7 @@ export class ValidateForm {
         if (form.parentNode) {
             // @ts-ignore
             form.parentNode.childNodes.forEach((item) => {
-                if (item.classList?.length > 0) {
+                if (item.classList.length > 0) {
                     if (item.classList.contains('feedback')) {
                         item.remove();
                     }
