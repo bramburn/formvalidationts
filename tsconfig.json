@@ -12,8 +12,6 @@
     "outDir": "dist",
     "types": [
       "@types/node",
-      "@nuxt/types",
-
     ]
   },
   "include": [

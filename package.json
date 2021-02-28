@@ -2,7 +2,7 @@
   "name": "formvalidationts",
   "version": "1.0.1",
   "description": "Form validation using phone lib for nuxtjs",
-  "main": "./dist/source.js",
+  "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc",
@@ -21,7 +21,6 @@
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "@babel/preset-env": "^7.12.7",
-    "@nuxt/types": "^2.14.9",
     "@nuxtjs/eslint-config": "latest",
     "@nuxtjs/eslint-config-typescript": "^5.0.0",
     "@typescript-eslint/eslint-plugin": "^4.9.0",
