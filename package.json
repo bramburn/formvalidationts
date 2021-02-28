@@ -4,6 +4,7 @@
   "description": "Form validation using phone lib for nuxtjs",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "type": "module",
   "scripts": {
     "build": "tsc",
     "buildw": "tsc -w",
