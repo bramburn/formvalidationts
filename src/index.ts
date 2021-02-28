@@ -89,7 +89,7 @@ export class ValidateForm {
         const uuid = v4()
 
         messageElement.id = uuid
-        form.parentElement?.append(messageElement)
+        form.parentElement.append(messageElement)
         this.registerFeedbackElement(form, uuid)
       }
     }
