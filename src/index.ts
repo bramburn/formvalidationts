@@ -5,9 +5,10 @@ export type formType = 'email' | 'length' | 'phoneNumber'
 
 export class ValidateForm {
     public validCSSClass:string = 'is-valid'
-    public invalidCSSClass:string = 'is-valid'
+    public invalidCSSClass:string = 'is-invalid'
 
     constructor () {
+
     }
 
     protected check (type: formType, value: string, params: string | null = null): { message: string; status: boolean } {

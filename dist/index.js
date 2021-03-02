@@ -1,9 +1,12 @@
-import { parsePhoneNumber } from 'libphonenumber-js';
-import { v4 } from 'uuid';
-export class ValidateForm {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ValidateForm = void 0;
+const libphonenumber_js_1 = require("libphonenumber-js");
+const uuid_1 = require("uuid");
+class ValidateForm {
     constructor() {
         this.validCSSClass = 'is-valid';
-        this.invalidCSSClass = 'is-valid';
+        this.invalidCSSClass = 'is-invalid';
         this.listOfFeedbackElement = [];
     }
     check(type, value, params = null) {
@@ -12,7 +15,7 @@ export class ValidateForm {
                 if (value.length < 8) {
                     return { status: false, message: 'Please enter a valid phone number' };
                 }
-                const phone = parsePhoneNumber(value, 'GB');
+                const phone = libphonenumber_js_1.parsePhoneNumber(value, 'GB');
                 return { status: phone.isValid(), message: 'Phone Number is Valid' };
             case 'email':
                 const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -80,7 +83,7 @@ export class ValidateForm {
             subMessageElement.style.display = 'block';
             messageElement.classList.add('feedback');
             messageElement.append(subMessageElement);
-            const uuid = v4();
+            const uuid = uuid_1.v4();
             messageElement.id = uuid;
             form.parentElement.append(messageElement);
             this.registerFeedbackElement(form, uuid);
@@ -110,3 +113,4 @@ export class ValidateForm {
         form.classList.add(this.validCSSClass);
     }
 }
+exports.ValidateForm = ValidateForm;
